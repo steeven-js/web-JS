@@ -531,8 +531,7 @@
                         <span class="mr-1">View team pricing</span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor" class="inline w-3 h-3">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                     </a>
                 </div>
@@ -540,21 +539,44 @@
                     <h3 class="mb-1 text-lg font-bold text-gray-900 dark:text-white">Designer edition</h3>
                     <span class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">$149</span>
                     <p class="my-4 text-sm text-gray-500 dark:text-gray-400">
-                        Upgrade your Figma toolkit with a design system built on top Tailwind CSS featuring variants, style guide, auto layout, and more.
+                        Upgrade your Figma toolkit with a design system built on top Tailwind CSS featuring variants,
+                        style guide, auto layout, and more.
                     </p>
                     <button
                         class="items-center justify-center w-full px-6 py-2 mb-3 text-base font-medium text-center text-white bg-purple-600 rounded-lg hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 md:mr-5 md:mb-0">
                         Buy now
                     </button>
                     <a href="#"
-                        class="block mt-3 text-sm font-medium text-blue-600 dark:text-blue-500 hover:text-blue-800">
+                        class="block mt-3 text-sm font-medium text-purple-600 dark:text-purple-500 hover:text-purple-800">
                         <span class="mr-1">View team pricing</span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor" class="inline w-3 h-3">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                     </a>
+                </div>
+                <div class="overflow-x-auto">
+                    <div class="overflow-hidden min-w-max">
+                        <div
+                            class="grid grid-cols-4 p-4 text-sm font-medium text-gray-900 bg-gray-100 border-t border-b border-gray-200 gap-x-16 dark:bg-gray-800 dark:border-gray-700 dark:text-white">
+                            <div class="flex items-center">
+                                <div class="relative w-6 h-6">
+                                    <span
+                                        class="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                        <img src="/storage/images/logo.svg" alt="logo"
+                                            class="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                                            sizes="100vw"
+                                            srcset="/storage/images/logo.svg 640w, /storage/images/logo.svg 750w, /storage/images/logo.svg 828w, /storage/images/logo.svg 1080w, /storage/images/logo.svg 1200w, /storage/images/logo.svg 1920w, /storage/images/logo.svg 2048w, /storage/images/logo.svg 3840w, ">
+                                        <noscript></noscript>
+                                    </span>
+                                </div>
+                                <span class="ml-3">Flowbite Blocks</span>
+                            </div>
+                            <div>Community Edition</div>
+                            <div>Developer Edition</div>
+                            <div>Designer Edition</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
