@@ -1,4 +1,4 @@
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-white dark:bg-gray-900" id="Pricing">
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-8xl lg:px-4">
 
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
