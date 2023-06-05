@@ -2,7 +2,7 @@
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center">
             <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">JSProd</span>
         </a>
         <div class="flex items-center md:order-2">
             <button id="theme-toggle" type="button"
@@ -23,7 +23,7 @@
                 id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
                 data-dropdown-placement="bottom">
                 <span class="sr-only">Open user menu</span>
-                <img class="w-8 h-8 rounded-full" src="https:/flowbite.com/docs/images/people/profile-picture-3.jpg" alt="user photo">
+                <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="user photo">
             </button>
             <!-- Dropdown menu -->
             <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"

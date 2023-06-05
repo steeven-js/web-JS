@@ -41,11 +41,6 @@
                             @include('components.check')
                             <span>Intégration</span>
                         </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            @include('components.red_cross')
-                            <span>Support téléphonique</span>
-                        </li>
                         <li class="flex justify-between space-x-3">
                             <span>Assistance technique</span>
                             <span>Par e-mail</span>
@@ -91,11 +86,6 @@
                             @include('components.check')
                             <span>Intégration</span>
                         </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            @include('components.red_cross')
-                            <span>Support téléphonique</span>
-                        </li>
                         <li class="flex justify-between space-x-3">
                             <span>Assistance technique</span>
                             <span>Par e-mail</span>
@@ -139,11 +129,6 @@
                             <!-- Icon -->
                             @include('components.check')
                             <span>Intégration</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            @include('components.red_cross')
-                            <span>Support téléphonique</span>
                         </li>
                         <li class="flex justify-between space-x-3">
                             <span>Assistance technique</span>

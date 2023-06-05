@@ -78,7 +78,7 @@
                     </linearGradient>
                 </defs>
             </svg>
-            Flowbite
+            JSProd
         </a>
         <p class="my-6 text-gray-500 dark:text-gray-400">Open-source library of over 400+ web components and
             interactive elements built for better web.</p>
@@ -87,25 +87,16 @@
                 <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
             </li>
             <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6">Premium</a>
+                <a href="#" class="mr-4 hover:underline md:mr-6">services</a>
             </li>
             <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6 ">Campaigns</a>
-            </li>
-            <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6">Blog</a>
-            </li>
-            <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6">Affiliate Program</a>
-            </li>
-            <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6">FAQs</a>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Pricing</a>
             </li>
             <li>
                 <a href="#" class="mr-4 hover:underline md:mr-6">Contact</a>
             </li>
         </ul>
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2021-2022 <a href="#"
-                class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+                class="hover:underline">JSProd™</a>. All Rights Reserved.</span>
     </div>
 </footer>

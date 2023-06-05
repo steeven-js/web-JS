@@ -1,4 +1,4 @@
-<section class="bg-white dark:bg-gray-900 h-screen">
+<section class="bg-white dark:bg-gray-900">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="mr-auto place-self-center lg:col-span-7">
             <h1
@@ -23,7 +23,7 @@
                 Speak to Sales
             </a>
         </div>
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <div class="lg:mt-0 lg:col-span-5 lg:flex">
             <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup">
         </div>
 </section>
