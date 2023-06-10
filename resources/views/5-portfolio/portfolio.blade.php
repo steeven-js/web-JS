@@ -14,10 +14,8 @@
             </a>
         </div>
         <div>
-            <a href="#" target="_blank">
-                <img class="h-auto max-w-full rounded-lg" src="{{ Storage::url('images/jswear-showcase.png') }}"
-                    alt="">
-            </a>
+            <img class="h-auto max-w-full rounded-lg" src="{{ Storage::url('images/jswear-showcase.png') }}"
+                alt="">
         </div>
         <div>
             <a href="https://carousel-57168.web.app/" target="_blank">

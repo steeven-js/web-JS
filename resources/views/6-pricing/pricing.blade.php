@@ -3,19 +3,18 @@
 
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
             <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Designed for
-                    business teams like yours</h2>
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Meilleure option pour un usage personnel et pour votre prochain projet.</h2>
                 <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on
                     markets where technology, innovation, and capital can unlock long-term value and drive economic
                     growth.</p>
             </div>
             <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
                 <!-- Starter Card -->
-                @include('6-pricing.starter')
+                @include('6-pricing.card-starter')
                 <!-- Prenium Card -->
-                @include('6-pricing.prenium')
+                @include('6-pricing.card-prenium')
                 <!-- Enterprise Card -->
-                @include('6-pricing.entreprise')
+                @include('6-pricing.card-entreprise')
             </div>
         </div>
 
@@ -24,7 +23,7 @@
             <div class="mb-8 md:mb-0">
                 <h3 class="mb-1 text-lg font-bold text-gray-900 dark:text-white">Starter</h3>
                 <div class="flex justify-start items-center space-x-3">
-                    <span>A partir de</span>
+                    <span class="dark:text-white">A partir de</span>
                     <span class="block mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">99€</span>
                 </div>
                 <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">Get started with an open source library of web
@@ -37,7 +36,7 @@
             <div class="mb-8 md:mb-0">
                 <h3 class="mb-1 text-lg font-bold text-gray-900 dark:text-white">Prenium</h3>
                 <div class="flex justify-start items-center space-x-3">
-                    <span>A partir de</span>
+                    <span class="dark:text-white">A partir de</span>
                     <span class="block mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">199€</span>
                 </div>
                 <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">Recommended for professional developers and
@@ -54,7 +53,7 @@
             <div class="mb-8 md:mb-0">
                 <h3 class="mb-1 text-lg font-bold text-gray-900 dark:text-white">Entreprise</h3>
                 <div class="flex justify-start items-center space-x-3">
-                    <span>A partir de</span>
+                    <span class="dark:text-white">A partir de</span>
                     <span class="block mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">499€</span>
                 </div>
                 <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">Upgrade your Figma toolkit with a design
