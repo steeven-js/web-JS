@@ -10,147 +10,23 @@
                     growth.</p>
             </div>
             <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-                <!-- Pricing Card -->
-                <div
-                    class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                    <h3 class="mb-4 text-2xl font-semibold">Starter</h3>
-                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for
-                        your next project.</p>
-                    <div class="flex justify-center items-baseline my-8">
-                        <span class="mr-2 text-5xl font-extrabold">$99</span>
-                    </div>
-                    <!-- List -->
-                    <ul role="list" class="mb-8 space-y-4 text-left">
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            @include('components.check')
-                            <span>Conception initiale</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            @include('components.red_cross')
-                            <span>Design (avancé)</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            @include('components.check')
-                            <span>Développement</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            @include('components.check')
-                            <span>Intégration</span>
-                        </li>
-                        <li class="flex justify-between space-x-3">
-                            <span>Assistance technique</span>
-                            <span>Par e-mail</span>
-                        </li>
-
-                        <li class="flex justify-between space-x-3">
-                            <span>Mises à jour</span>
-                            <span>2/mois (inclus)</span>
-                        </li>
-                    </ul>
-                    <a href="#"
-                        class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get
-                        started</a>
-                </div>
-                <!-- Pricing Card -->
-                <div
-                    class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                    <h3 class="mb-4 text-2xl font-semibold">Prenium</h3>
-                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Relevant for multiple users,
-                        extended & premium support.</p>
-                    <div class="flex justify-center items-baseline my-8">
-                        <span class="mr-2 text-5xl font-extrabold">$199</span>
-                    </div>
-                    <!-- List -->
-                    <ul role="list" class="mb-8 space-y-4 text-left">
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            @include('components.check')
-                            <span>Conception initiale</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            @include('components.check')
-                            <span>Design (avancé)</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            @include('components.check')
-                            <span>Développement</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            @include('components.check')
-                            <span>Intégration</span>
-                        </li>
-                        <li class="flex justify-between space-x-3">
-                            <span>Assistance technique</span>
-                            <span>Par e-mail</span>
-                        </li>
-                        <li class="flex justify-between space-x-3">
-                            <span>Mises à jour</span>
-                            <span>4/mois (inclus)</span>
-                        </li>
-                    </ul>
-                    <a href="#"
-                        class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get
-                        started</a>
-                </div>
-                <!-- Pricing Card -->
-                <div
-                    class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                    <h3 class="mb-4 text-2xl font-semibold">Enterprise</h3>
-                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best for large scale uses and
-                        extended redistribution rights.</p>
-                    <div class="flex justify-center items-baseline my-8">
-                        <span class="mr-2 text-5xl font-extrabold">$499</span>
-                    </div>
-                    <!-- List -->
-                    <ul role="list" class="mb-8 space-y-4 text-left">
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            @include('components.check')
-                            <span>Conception initiale</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            @include('components.check')
-                            <span>Design (avancé)</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            @include('components.check')
-                            <span>Développement</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            @include('components.check')
-                            <span>Intégration</span>
-                        </li>
-                        <li class="flex justify-between space-x-3">
-                            <span>Assistance technique</span>
-                            <span>Par e-mail</span>
-                        </li>
-                        <li class="flex justify-between space-x-3">
-                            <span>Mises à jour</span>
-                            <span>8/mois (inclus)</span>
-                        </li>
-                    </ul>
-                    <a href="#"
-                        class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get
-                        started</a>
-                </div>
+                <!-- Starter Card -->
+                @include('6-pricing.starter')
+                <!-- Prenium Card -->
+                @include('6-pricing.prenium')
+                <!-- Enterprise Card -->
+                @include('6-pricing.entreprise')
             </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-4 gap-x-16 bg-gray-50 dark:bg-gray-800 p-8 rounded-t-lg">
             <div class="hidden md:block"></div>
             <div class="mb-8 md:mb-0">
-                <h3 class="mb-1 text-lg font-bold text-gray-900 dark:text-white">Community edition</h3>
-                <span class="block mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">Starter</span>
+                <h3 class="mb-1 text-lg font-bold text-gray-900 dark:text-white">Starter</h3>
+                <div class="flex justify-start items-center space-x-3">
+                    <span>A partir de</span>
+                    <span class="block mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">99€</span>
+                </div>
                 <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">Get started with an open source library of web
                     components and interactive elements based on Tailwind CSS.</p>
                 <a href="#"
@@ -159,8 +35,11 @@
                 </a>
             </div>
             <div class="mb-8 md:mb-0">
-                <h3 class="mb-1 text-lg font-bold text-gray-900 dark:text-white">Developer edition</h3>
-                <span class="block mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">Prenium</span>
+                <h3 class="mb-1 text-lg font-bold text-gray-900 dark:text-white">Prenium</h3>
+                <div class="flex justify-start items-center space-x-3">
+                    <span>A partir de</span>
+                    <span class="block mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">199€</span>
+                </div>
                 <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">Recommended for professional developers and
                     companies building enterprise-level websites and applications.</p>
                 <button
@@ -173,8 +52,11 @@
                 </a>
             </div>
             <div class="mb-8 md:mb-0">
-                <h3 class="mb-1 text-lg font-bold text-gray-900 dark:text-white">Designer edition</h3>
-                <span class="block mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">Entreprise</span>
+                <h3 class="mb-1 text-lg font-bold text-gray-900 dark:text-white">Entreprise</h3>
+                <div class="flex justify-start items-center space-x-3">
+                    <span>A partir de</span>
+                    <span class="block mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">499€</span>
+                </div>
                 <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">Upgrade your Figma toolkit with a design
                     system built on top Tailwind CSS featuring variants, style guide, auto layout, and more.</p>
                 <button
@@ -205,9 +87,9 @@
                         </div>
                         <span class="ml-3">Flowbite Blocks</span>
                     </div>
-                    <div>Community Edition</div>
-                    <div>Developer Edition</div>
-                    <div>Designer Edition</div>
+                    <div>Starter</div>
+                    <div>Prenium</div>
+                    <div>Entreprise</div>
                 </div>
                 <!-- -->
                 <div
@@ -222,7 +104,9 @@
                 <!-- -->
                 <div
                     class="grid grid-cols-4 px-4 py-5 text-sm text-gray-700 border-b border-gray-200 gap-x-16 dark:border-gray-700">
-                    <div class="text-gray-500 dark:text-gray-400"><p>Nombre de pages statiques</p></div>
+                    <div class="text-gray-500 dark:text-gray-400">
+                        <p>Nombre de pages statiques</p>
+                    </div>
                     <div class="text-gray-500 dark:text-gray-400">5 pages</div>
                     <div class="text-gray-500 dark:text-gray-400">10 pages</div>
                     <div class="text-gray-500 dark:text-gray-400">illimité</div>
@@ -230,7 +114,9 @@
                 <!-- -->
                 <div
                     class="grid grid-cols-4 px-4 py-5 text-sm text-gray-700 border-b border-gray-200 gap-x-16 dark:border-gray-700">
-                    <div class="text-gray-500 dark:text-gray-400"><p>Pages dynamiques</p></div>
+                    <div class="text-gray-500 dark:text-gray-400">
+                        <p>Pages dynamiques</p>
+                    </div>
                     @include('components.red_cross')
                     <div class="text-gray-500 dark:text-gray-400">5 pages</div>
                     <div class="text-gray-500 dark:text-gray-400">illimité</div>
@@ -238,7 +124,9 @@
                 <!-- -->
                 <div
                     class="grid grid-cols-4 px-4 py-5 text-sm text-gray-700 border-b border-gray-200 gap-x-16 dark:border-gray-700">
-                    <div class="text-gray-500 dark:text-gray-400"><p>Formulaire de contact</p></div>
+                    <div class="text-gray-500 dark:text-gray-400">
+                        <p>Formulaire de contact</p>
+                    </div>
                     @include('components.check')
                     @include('components.check')
                     @include('components.check')
@@ -246,7 +134,9 @@
                 <!-- -->
                 <div
                     class="grid grid-cols-4 px-4 py-5 text-sm text-gray-700 border-b border-gray-200 gap-x-16 dark:border-gray-700">
-                    <div class="text-gray-500 dark:text-gray-400"><p>Galerie d'images</p></div>
+                    <div class="text-gray-500 dark:text-gray-400">
+                        <p>Galerie d'images</p>
+                    </div>
                     @include('components.check')
                     @include('components.check')
                     @include('components.check')
@@ -254,7 +144,9 @@
                 <!-- -->
                 <div
                     class="grid grid-cols-4 px-4 py-5 text-sm text-gray-700 border-b border-gray-200 gap-x-16 dark:border-gray-700">
-                    <div class="text-gray-500 dark:text-gray-400"><p>Blog</p></div>
+                    <div class="text-gray-500 dark:text-gray-400">
+                        <p>Blog</p>
+                    </div>
                     @include('components.red_cross')
                     @include('components.check')
                     @include('components.check')
@@ -262,7 +154,9 @@
                 <!-- -->
                 <div
                     class="grid grid-cols-4 px-4 py-5 text-sm text-gray-700 border-b border-gray-200 gap-x-16 dark:border-gray-700">
-                    <div class="text-gray-500 dark:text-gray-400"><p>E-commerce</p></div>
+                    <div class="text-gray-500 dark:text-gray-400">
+                        <p>E-commerce</p>
+                    </div>
                     @include('components.red_cross')
                     @include('components.red_cross')
                     @include('components.check')
@@ -270,7 +164,9 @@
                 <!-- -->
                 <div
                     class="grid grid-cols-4 px-4 py-5 text-sm text-gray-700 border-b border-gray-200 gap-x-16 dark:border-gray-700">
-                    <div class="text-gray-500 dark:text-gray-400"><p>Optimisation SEO</p></div>
+                    <div class="text-gray-500 dark:text-gray-400">
+                        <p>Optimisation SEO</p>
+                    </div>
                     @include('components.red_cross')
                     @include('components.check')
                     @include('components.check')
@@ -278,7 +174,9 @@
                 <!-- -->
                 <div
                     class="grid grid-cols-4 px-4 py-5 text-sm text-gray-700 border-b border-gray-200 gap-x-16 dark:border-gray-700">
-                    <div class="text-gray-500 dark:text-gray-400"><p>Hébergement</p></div>
+                    <div class="text-gray-500 dark:text-gray-400">
+                        <p>Hébergement</p>
+                    </div>
                     <div class="text-gray-500 dark:text-gray-400">15€/mois</div>
                     <div class="text-gray-500 dark:text-gray-400">30€/mois</div>
                     <div class="text-gray-500 dark:text-gray-400">150€/mois</div>
@@ -296,7 +194,9 @@
                 <!-- -->
                 <div
                     class="grid grid-cols-4 px-4 py-5 text-sm text-gray-700 border-b border-gray-200 gap-x-16 dark:border-gray-700">
-                    <div class="text-gray-500 dark:text-gray-400"><p>Maintenance</p></div>
+                    <div class="text-gray-500 dark:text-gray-400">
+                        <p>Maintenance</p>
+                    </div>
                     <div class="text-gray-500 dark:text-gray-400">50€/mois</div>
                     <div class="text-gray-500 dark:text-gray-400">100€/mois</div>
                     <div class="text-gray-500 dark:text-gray-400">Sur devis</div>
@@ -304,7 +204,9 @@
                 <!-- -->
                 <div
                     class="grid grid-cols-4 px-4 py-5 text-sm text-gray-700 border-b border-gray-200 gap-x-16 dark:border-gray-700">
-                    <div class="text-gray-500 dark:text-gray-400"><p>Support technique	</p></div>
+                    <div class="text-gray-500 dark:text-gray-400">
+                        <p>Support technique </p>
+                    </div>
                     <div class="text-gray-500 dark:text-gray-400">Email</div>
                     <div class="text-gray-500 dark:text-gray-400">Email</div>
                     <div class="text-gray-500 dark:text-gray-400">Email / Téléphone</div>
