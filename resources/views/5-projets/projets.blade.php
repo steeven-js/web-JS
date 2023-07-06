@@ -1,4 +1,4 @@
-<section class="py-8 bg-white dark:bg-gray-800" id="Portfolio">
+<section class="py-8 bg-white dark:bg-gray-800" id="Projets">
     <div class="pt-8 mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Designed for
             business teams like yours</h2>

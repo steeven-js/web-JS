@@ -9,11 +9,11 @@
     <!-- about end -->
 
     <!-- features start -->
-    {{-- @include('4-features/features') --}}
+    @include('4-features/features')
     <!-- features end -->
 
     <!-- portfolio start -->
-    @include('5-portfolio/portfolio')
+    @include('5-projets/projets')
     <!-- portfolio end -->
 
     <!-- pricing start -->
