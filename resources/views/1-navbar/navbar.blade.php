@@ -70,11 +70,11 @@
     var x = document.getElementById("mobile-menu-2");
 
     const myFunction = () => {
-        console.log('debut', x);
+        // console.log('debut', x);
 
         // x.classList.remove("hidden");
 
-        console.log(x.classList.contains("hidden"));
+        // console.log(x.classList.contains("hidden"));
 
         if (x.classList.contains("hidden")) {
             // x.style.display = "block";
