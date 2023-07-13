@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NewbieController;
 use App\Http\Controllers\ProfileController;
 
 /*
@@ -16,6 +17,8 @@ use App\Http\Controllers\ProfileController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/newbie', [NewbieController::class, 'index'])->name('newbie.index');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

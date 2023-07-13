@@ -9,14 +9,10 @@ class NewbieController extends Controller
 {
     public function index()
     {
-        // Vérifier si view_code est null, sinon attribuer 'newbie' + id
-        $newbie = Newbie::whereNull('view_code')->firstOrFail();
-        if ($newbie) {
-            $newbie->view_code = 'newbie' - $newbie->id;
-            $newbie->save();
-        }
+        //Récupérer tous les newbie de la base de données is_visible = 1
+        $newbies = Newbie::where('is_visible', 1)->get();
 
-        return view('newbie.index');
+        return view('pages.newbie.index');
     }
 
     public function show($slug)
