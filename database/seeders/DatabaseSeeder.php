@@ -22,6 +22,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UsersTableSeeder::class,
             NewbieSeeder::class,
+            JuniorSeeder::class,
+            IntermediateSeeder::class,
         ]);
     }
 }

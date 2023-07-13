@@ -4,25 +4,25 @@ namespace App\Filament\Resources;
 
 use Filament\Forms;
 use Filament\Tables;
-use App\Models\Newbie;
 use Illuminate\Support\Str;
+use App\Models\Intermediate;
 use Filament\Resources\Form;
 use Filament\Resources\Table;
 use Filament\Resources\Resource;
 use Illuminate\Database\Eloquent\Builder;
-use App\Filament\Resources\NewbieResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\NewbieResource\RelationManagers;
+use App\Filament\Resources\IntermediateResource\Pages;
+use App\Filament\Resources\IntermediateResource\RelationManagers;
 
-class NewbieResource extends Resource
+class IntermediateResource extends Resource
 {
-    protected static ?string $model = Newbie::class; // Modèle associé à la ressource
+    protected static ?string $model = Intermediate::class;
 
     protected static ?string $navigationGroup = 'Challenge'; // Groupe de navigation
 
-    protected static ?int $navigationSort = 1; // Position dans le groupe de navigation
+    protected static ?int $navigationSort = 3; // Position dans le groupe de navigation
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection'; // Icône de navigation
+    protected static ?string $navigationIcon = 'heroicon-o-collection';
 
     public static function form(Form $form): Form
     {
@@ -55,7 +55,7 @@ class NewbieResource extends Resource
     public static function table(Table $table): Table
     {
         return $table
-            ->columns([  // Liste des colonnes
+            ->columns([
                 Tables\Columns\TextColumn::make('title'),
                 Tables\Columns\TextColumn::make('slug'),
                 Tables\Columns\TextColumn::make('view_code'),
@@ -89,9 +89,9 @@ class NewbieResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListNewbies::route('/'),
-            'create' => Pages\CreateNewbie::route('/create'),
-            'edit' => Pages\EditNewbie::route('/{record}/edit'),
+            'index' => Pages\ListIntermediates::route('/'),
+            'create' => Pages\CreateIntermediate::route('/create'),
+            'edit' => Pages\EditIntermediate::route('/{record}/edit'),
         ];
     }
 }
