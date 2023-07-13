@@ -13,12 +13,14 @@ return new class extends Migration
     {
         Schema::create('challenges', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('challenge_level_id');
+            $table->foreign('challenge_level_id')->references('id')->on('challenge_levels');
+            $table->integer('position')->nullable();
             $table->string('title');
+            $table->string('slug')->unique();
             $table->string('image')->nullable();
             $table->string('hosted_url')->nullable();
             $table->string('github_url')->nullable();
-            $table->unsignedBigInteger('challenge_level_id');
-            $table->foreign('challenge_level_id')->references('id')->on('challenge_levels');
             $table->timestamps();
         });
     }

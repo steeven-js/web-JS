@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Challenge;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -13,10 +14,11 @@ class HomeController extends Controller
     public function index()
     {
         $users = User::All();
+        $challenges = Challenge::all();
 
         // dd($users);
 
-        return view('pages.home', compact('users'));
+        return view('pages.home', compact('users', 'challenges'));
     }
 
     /**

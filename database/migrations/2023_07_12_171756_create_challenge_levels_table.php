@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('challenge_levels', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->integer('position')->nullable();
             $table->timestamps();
         });
 
