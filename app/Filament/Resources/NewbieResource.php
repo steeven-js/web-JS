@@ -2,22 +2,27 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\NewbieResource\Pages;
-use App\Filament\Resources\NewbieResource\RelationManagers;
-use App\Models\Newbie;
 use Filament\Forms;
-use Filament\Resources\Form;
-use Filament\Resources\Resource;
-use Filament\Resources\Table;
 use Filament\Tables;
+use App\Models\Newbie;
+use Illuminate\Support\Str;
+use Filament\Resources\Form;
+use Filament\Resources\Table;
+use Filament\Resources\Resource;
 use Illuminate\Database\Eloquent\Builder;
+use App\Filament\Resources\NewbieResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use App\Filament\Resources\NewbieResource\RelationManagers;
 
 class NewbieResource extends Resource
 {
-    protected static ?string $model = Newbie::class;
+    protected static ?string $model = Newbie::class; // Modèle associé à la ressource
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationGroup = 'Challenge'; // Groupe de navigation
+
+    protected static ?int $navigationSort = 1; // Position dans le groupe de navigation
+
+    protected static ?string $navigationIcon = 'heroicon-o-collection'; // Icône de navigation
 
     public static function form(Form $form): Form
     {
@@ -25,18 +30,24 @@ class NewbieResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('title')
                     ->required()
-                    ->maxLength(255),
+                    ->lazy()
+                    ->afterStateUpdated(fn (string $context, $state, callable $set) => $context === 'create' || $context === 'edit' ? $set('slug', Str::slug($state)) : null),
                 Forms\Components\TextInput::make('slug')
+                    ->disabled()
                     ->required()
-                    ->maxLength(255),
+                    ->unique(Newbie::class, 'slug', ignoreRecord: true),
                 Forms\Components\TextInput::make('view_code')
+                    ->disabled()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('position'),
-                Forms\Components\TextInput::make('image')
-                    ->maxLength(255),
+                Forms\Components\TextInput::make('position')
+                    ->disabled()
+                    ->numeric(), // Champ numérique
+                Forms\Components\FileUpload::make('image'), // Champ de type fichier
                 Forms\Components\TextInput::make('hosted_url')
+                    ->url()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('github_url')
+                    ->url()
                     ->maxLength(255),
             ]);
     }
@@ -44,7 +55,7 @@ class NewbieResource extends Resource
     public static function table(Table $table): Table
     {
         return $table
-            ->columns([
+            ->columns([  // Liste des colonnes
                 Tables\Columns\TextColumn::make('title'),
                 Tables\Columns\TextColumn::make('slug'),
                 Tables\Columns\TextColumn::make('view_code'),
@@ -67,14 +78,14 @@ class NewbieResource extends Resource
                 Tables\Actions\DeleteBulkAction::make(),
             ]);
     }
-    
+
     public static function getRelations(): array
     {
         return [
             //
         ];
     }
-    
+
     public static function getPages(): array
     {
         return [
@@ -82,5 +93,5 @@ class NewbieResource extends Resource
             'create' => Pages\CreateNewbie::route('/create'),
             'edit' => Pages\EditNewbie::route('/{record}/edit'),
         ];
-    }    
+    }
 }

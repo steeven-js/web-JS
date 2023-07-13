@@ -18,7 +18,7 @@ class NewbieSeeder extends Seeder
             $newbie = new \App\Models\Newbie();
             $newbie->title = 'Newbie ' . $i;
             $newbie->slug = 'newbie-' . $i;
-            $newbie->view_code = 'newbie-' . $i;
+            // $newbie->view_code = 'newbie-' . $i;
             $newbie->position = $i;
             $newbie->image = 'https://picsum.photos/seed/' . $i . '/200/300';
             $newbie->hosted_url = 'https://picsum.photos/seed/' . $i . '/200/300';
