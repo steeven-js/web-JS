@@ -26,4 +26,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+// Boucler les routes pour chaque newbie
+$newbies = \App\Models\Newbie::where('is_visible', true)->get();
+foreach ($newbies as $newbie) {
+    Route::get('/newbie/{slug}', [NewbieController::class, 'show'])
+    ->name('newbie.show');
+}
+
+
 require __DIR__.'/auth.php';

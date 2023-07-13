@@ -17,8 +17,16 @@ class NewbieController extends Controller
 
     public function show($slug)
     {
-        return view('newbie.show', [
-            'slug' => $slug
-        ]);
+        $newbie = Newbie::where('slug', $slug)->first();
+
+        if (!$newbie) {
+            abort(404);
+        }
+
+        $viewPath = 'pages.newbie.show.' . $newbie->view_code;
+
+        // dd($viewPath);
+
+        return view($viewPath, compact('newbie'));
     }
 }

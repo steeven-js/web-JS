@@ -1,6 +1,6 @@
 @extends('layouts.default')
 @section('content')
-{{-- @dd($newbies); --}}
+    {{-- @dd($newbies); --}}
     <section class="py-8 bg-white dark:bg-gray-800" id="Projets">
         <div class="pt-8 mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Newbie</h2>
@@ -10,9 +10,12 @@
         </div>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
             @forelse ($newbies as $newbie)
+            {{-- @dd($newbie->slug) --}}
                 <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
+                    <a href="{{ route('newbie.show', ['slug' => $newbie->slug]) }}">
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
+                    </a>
                 </div>
             @empty
                 <h1>Aucun challenge Newbie</h1>
