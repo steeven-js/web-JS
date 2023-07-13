@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('position')->nullable();
             $table->string('title');
             $table->string('slug')->unique();
+            $table->string('view_code')->nullable();
             $table->string('image')->nullable();
             $table->string('hosted_url')->nullable();
             $table->string('github_url')->nullable();

@@ -15,6 +15,7 @@ class Challenge extends Model
         'challenge_level_id',
         'title',
         'slug',
+        'view_code',
         'position',
         'image',
         'hosted_url',
@@ -26,17 +27,22 @@ class Challenge extends Model
         return $this->belongsTo(ChallengeLevel::class);
     }
 
-    protected static function boot()
-    {
-        parent::boot();
+    // protected static function boot()
+    // {
+    //     parent::boot();
 
-        static::creating(function ($model) {
-            $model->slug = Str::slug($model->title);
-        });
-    }
+    //     static::creating(function ($model) {
+    //         $model->slug = Str::slug($model->title);
+    //     });
+    // }
 
-    public function setSlugAttribute($value)
-    {
-        $this->attributes['slug'] = Str::slug($value);
-    }
+    // public function setSlugAttribute($value)
+    // {
+    //     $this->attributes['slug'] = Str::slug($value);
+    // }
+
+    // public function getViewCodeAttribute()
+    // {
+    //     $this->attributes['view_code'] = Str::camel($this->slug);
+    // }
 }

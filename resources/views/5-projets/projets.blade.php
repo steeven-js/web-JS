@@ -9,7 +9,10 @@
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
         @foreach ($challenges as $challenge)
             <div>
-                <img class="h-auto max-w-full rounded-lg" src="{{ $challenge->image }}" alt="{{$challenge->challengeLevel->name}}">
+                <a href="{{ route('challenges.show', ['slug' => $challenge->slug]) }}">
+                    <img class="h-auto max-w-full rounded-lg" src="{{ $challenge->image }}"
+                        alt="{{ $challenge->challengeLevel->name }}">
+                </a>
             </div>
         @endforeach
     </div>

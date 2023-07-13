@@ -5,6 +5,7 @@ namespace App\Filament\Resources;
 use Filament\Forms;
 use Filament\Tables;
 use App\Models\Challenge;
+use Illuminate\Support\Str;
 use Filament\Resources\Form;
 use Filament\Resources\Table;
 use Filament\Resources\Resource;
@@ -30,9 +31,30 @@ class ChallengeResource extends Resource
                             ->label('Challenge Level')
                             ->relationship('challengeLevel', 'name')
                             ->required(),
+
                         Forms\Components\TextInput::make('title')
                             ->required()
-                            ->maxLength(255),
+                            ->maxValue(50)
+                            ->lazy()
+                            ->afterStateUpdated(function (string $context, $state, callable $set) {
+                                if ($context === 'create' || $context === 'edit') {
+                                    $set('slug', Str::slug($state));
+                                    $set('view_code', Str::camel($state));
+                                }
+
+                                // dd($state);
+                            }),
+
+                        Forms\Components\TextInput::make('slug')
+                            ->disabled()
+                            ->required()
+                            ->unique(Challenge::class, 'slug', ignoreRecord: true),
+
+                        Forms\Components\TextInput::make('view_code')
+                            ->disabled()
+                            ->required()
+                            ->unique(Challenge::class, 'view_code', ignoreRecord: true),
+
                         Forms\Components\FileUpload::make('image'),
                         Forms\Components\TextInput::make('hosted_url')
                             ->maxLength(255),

@@ -46,15 +46,17 @@ class ChallengeLevelSeeder extends Seeder
             for ($i = 0; $i < 5; $i++) {
                 $title = $faker->sentence(3);
                 $slug = Str::slug($title);
+                $viewCode = Str::camel($slug); // Utilisation du slug pour générer le view code
 
                 Challenge::create([
+                    'challenge_level_id' => $challengeLevel->id,
                     'position' => $position, // Affecter la position au challenge
                     'title' => $title,
                     'slug' => $slug,
+                    'view_code' => $viewCode, // Affecter le view code au challenge
                     'image' => $faker->imageUrl(),
                     'hosted_url' => $faker->url(),
                     'github_url' => $faker->url(),
-                    'challenge_level_id' => $challengeLevel->id,
                 ]);
 
                 $position++; // Incrémenter la position
