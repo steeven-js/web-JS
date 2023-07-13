@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('slug')->unique();
+            $table->boolean('is_visible')->default(false);
             $table->string('view_code')->nullable();
             $table->integer('position')->nullable();
             $table->string('image')->nullable();

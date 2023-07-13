@@ -16,6 +16,7 @@ class IntermediateSeeder extends Seeder
             $newbie = new \App\Models\Intermediate();
             $newbie->title = 'Intermediate ' . $i;
             $newbie->slug = 'intermediate-' . $i;
+            $newbie->is_visible = true;
             $newbie->view_code = 'newbie-' . $i;
             $newbie->position = $i;
             $newbie->image = 'https://picsum.photos/seed/' . $i . '/200/300';

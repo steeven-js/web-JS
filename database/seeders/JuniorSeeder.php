@@ -16,6 +16,7 @@ class JuniorSeeder extends Seeder
             $newbie = new \App\Models\Junior();
             $newbie->title = 'Junior ' . $i;
             $newbie->slug = 'junior-' . $i;
+            $newbie->is_visible = true;
             $newbie->view_code = 'junior-' . $i;
             $newbie->position = $i;
             $newbie->image = 'https://picsum.photos/seed/' . $i . '/200/300';

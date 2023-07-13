@@ -16,7 +16,7 @@ class NewbieController extends Controller
             $newbie->save();
         }
 
-        return view('home');
+        return view('newbie.index');
     }
 
     public function show($slug)

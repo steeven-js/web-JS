@@ -36,6 +36,10 @@ class NewbieResource extends Resource
                     ->disabled()
                     ->required()
                     ->unique(Newbie::class, 'slug', ignoreRecord: true),
+                Forms\Components\Toggle::make('is_visible')
+                    ->label('Visible')
+                    ->helperText('This product will be hidden from all sales channels.')
+                    ->default(true),
                 Forms\Components\TextInput::make('view_code')
                     ->disabled()
                     ->maxLength(255),
@@ -58,6 +62,10 @@ class NewbieResource extends Resource
             ->columns([  // Liste des colonnes
                 Tables\Columns\TextColumn::make('title'),
                 Tables\Columns\TextColumn::make('slug'),
+                Tables\Columns\ToggleColumn::make('is_visible')
+                    ->label('Visibility')
+                    ->sortable()
+                    ->toggleable(),
                 Tables\Columns\TextColumn::make('view_code'),
                 Tables\Columns\TextColumn::make('position'),
                 Tables\Columns\TextColumn::make('image'),
