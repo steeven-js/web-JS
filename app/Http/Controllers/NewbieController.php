@@ -12,7 +12,7 @@ class NewbieController extends Controller
         //Récupérer tous les newbie de la base de données is_visible = 1
         $newbies = Newbie::where('is_visible', 1)->get();
 
-        return view('pages.newbie.index');
+        return view('pages.newbie.index', compact('newbies'));
     }
 
     public function show($slug)

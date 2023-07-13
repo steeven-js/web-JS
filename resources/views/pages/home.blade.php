@@ -23,4 +23,4 @@
     <!-- contact start -->
     @include('7-contact/contact')
     <!-- contact end -->
-@stop
+@endsection
