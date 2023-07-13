@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use App\Models\Challenge;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -15,15 +14,56 @@ class HomeController extends Controller
     {
         $users = User::All();
 
-        $challenges = Challenge::join('challenge_levels', 'challenges.challenge_level_id', '=', 'challenge_levels.id')
-            ->orderBy('challenge_levels.position', 'asc')
-            ->orderBy('challenges.position', 'asc')
-            ->select('challenges.*')
-            ->get();
+        // dd($users);
 
-        // dd($challenges);
-
-        return view('pages.home', compact('users', 'challenges'));
+        return view('pages.home', compact('users'));
     }
 
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
+    {
+        //
+    }
 }

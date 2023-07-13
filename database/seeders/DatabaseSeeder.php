@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             UsersTableSeeder::class,
-            ChallengeLevelSeeder::class,
+            NewbieSeeder::class,
         ]);
     }
 }
