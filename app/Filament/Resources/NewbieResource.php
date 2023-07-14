@@ -36,8 +36,8 @@ class NewbieResource extends Resource
                     ->disabled()
                     ->required()
                     ->unique(Newbie::class, 'slug', ignoreRecord: true),
-                Forms\Components\Toggle::make('is_visible')
-                    ->label('Visible'),
+                // Forms\Components\Toggle::make('is_visible')
+                //     ->label('Visible'),
                 Forms\Components\TextInput::make('view_code')
                     ->hidden()
                     ->disabled()
