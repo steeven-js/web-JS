@@ -11,7 +11,7 @@
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
             @forelse ($newbies as $newbie)
                 {{-- @dd($newbie->slug) --}}
-                @if (!empty($newbie->hosted_url))
+                @if ($newbie->hosted_is_active == 1)
                     <a href="{{ route('newbie.show', ['slug' => $newbie->slug]) }}">
                         <img class="h-auto max-w-full rounded-lg" src="{{ Storage::url($newbie->image) }}"
                             alt="{{ $newbie->title }}">

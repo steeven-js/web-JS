@@ -20,7 +20,9 @@ return new class extends Migration
             $table->integer('position')->nullable();
             $table->string('image')->nullable();
             $table->string('hosted_url')->nullable();
+            $table->boolean('hosted_is_active')->default(false);
             $table->string('github_url')->nullable();
+            $table->boolean('github_is_active')->default(false);
             $table->timestamps();
         });
     }
