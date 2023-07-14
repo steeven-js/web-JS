@@ -12,12 +12,12 @@
             @forelse ($newbies as $newbie)
                 {{-- @dd($newbie->slug) --}}
                 @if ($newbie->hosted_is_active == 1)
-                    <a href="{{ route('newbie.show', ['slug' => $newbie->slug]) }}" href="_blank">
+                    <a href="{{ route('newbie.show', ['slug' => $newbie->slug]) }}" target="_blank">
                         <img class="h-auto max-w-full rounded-lg" src="{{ Storage::url($newbie->image) }}"
                             alt="{{ $newbie->title }}">
                     </a>
                 @else
-                    <a href="#" href="_blank">
+                    <a href="#" target="_blank">
                         <img class="h-auto max-w-full rounded-lg" src="{{ Storage::url($newbie->image) }}"
                             alt="{{ $newbie->title }}">
                     </a>
