@@ -37,9 +37,7 @@ class NewbieResource extends Resource
                     ->required()
                     ->unique(Newbie::class, 'slug', ignoreRecord: true),
                 Forms\Components\Toggle::make('is_visible')
-                    ->label('Visible')
-                    ->helperText('This product will be hidden from all sales channels.')
-                    ->default(true),
+                    ->label('Visible'),
                 Forms\Components\TextInput::make('view_code')
                     ->hidden()
                     ->disabled()
@@ -52,9 +50,13 @@ class NewbieResource extends Resource
                 Forms\Components\TextInput::make('hosted_url')
                     ->url() // Champ de type url
                     ->maxLength(255),
+                Forms\Components\Toggle::make('hosted_is_active')
+                    ->label('Active'),
                 Forms\Components\TextInput::make('github_url')
                     ->url()
                     ->maxLength(255),
+                Forms\Components\Toggle::make('github_is_active')
+                    ->label('Active'),
             ]);
     }
 
