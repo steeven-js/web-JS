@@ -60,15 +60,17 @@ class NewbieResource extends Resource
     {
         return $table
             ->columns([  // Liste des colonnes
+                Tables\Columns\ImageColumn::make('image')
+                    ->circular(),
                 Tables\Columns\TextColumn::make('title'),
-                Tables\Columns\TextColumn::make('slug'),
+                Tables\Columns\TextColumn::make('slug')
+                    ->hidden(),
                 Tables\Columns\ToggleColumn::make('is_visible')
                     ->label('Visibility')
                     ->sortable()
                     ->toggleable(),
                 Tables\Columns\TextColumn::make('view_code'),
                 Tables\Columns\TextColumn::make('position'),
-                Tables\Columns\TextColumn::make('image'),
                 Tables\Columns\TextColumn::make('hosted_url'),
                 Tables\Columns\TextColumn::make('github_url'),
                 Tables\Columns\TextColumn::make('created_at')

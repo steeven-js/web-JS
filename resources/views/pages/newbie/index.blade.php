@@ -14,7 +14,7 @@
                 <div>
                     <a href="{{ route('newbie.show', ['slug' => $newbie->slug]) }}">
                         <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
+                            src="{{Storage::url($newbie->image)}}" alt="{{$newbie->title}}">
                     </a>
                 </div>
             @empty
