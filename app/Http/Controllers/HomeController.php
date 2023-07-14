@@ -13,11 +13,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $users = User::All();
+        $users = User::All(); // get all users
 
         // dd($users);
 
-        $newbies = Newbie::where('is_visible', 1)->get();
+        $newbies = Newbie::where('is_visible', 1)->get();// get all visible newbies
 
         return view('pages.home', compact('users', 'newbies'));
     }
