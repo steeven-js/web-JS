@@ -41,9 +41,11 @@ class NewbieResource extends Resource
                     ->helperText('This product will be hidden from all sales channels.')
                     ->default(true),
                 Forms\Components\TextInput::make('view_code')
+                    ->hidden()
                     ->disabled()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('position')
+                    ->hidden()
                     ->disabled()
                     ->numeric(), // Champ numérique
                 Forms\Components\FileUpload::make('image'), // Champ de type fichier
