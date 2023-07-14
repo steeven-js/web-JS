@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('newbie/newbie-2/assets/images/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('newbie/newbie-6/assets/images/favicon-32x32.png') }}">
     <link rel="stylesheet" href="styles.css">
 
     <title>Order summary card</title>
@@ -30,7 +30,7 @@
                     like!</p>
                 <div class="plan-box">
                     <div class="plan-box-left">
-                        <img src="{{ asset('newbie/newbie-2/assets/images/icon-music.svg') }}" alt="" aria-hidden="true">
+                        <img src="{{ asset('newbie/newbie-6/assets/images/icon-music.svg') }}" alt="" aria-hidden="true">
                         <div class="plan-details">
                             <h2>Annual Plan</h2>
                             <p>$59.99/year</p>
