@@ -12,6 +12,8 @@ class NewbieSeeder extends Seeder
      */
     public function run(): void
     {
+        $MY_DOMAIN = env('APP_URL');
+
         DB::table('newbies')->insert([
             [
                 'id' => 1,
@@ -21,7 +23,7 @@ class NewbieSeeder extends Seeder
                 'view_code' => 'newbie-1',
                 'position' => 1,
                 'image' => 'cRPVTO9SddLN2CSFgLLC04CffgbKHi-metaZGVza3RvcC1wcmV2aWV3LmpwZw==-.jpg',
-                'hosted_url' => 'http://127.0.0.1:8000/newbie/results-summary-component',
+                'hosted_url' => $MY_DOMAIN.'/newbie/results-summary-component',
                 'hosted_is_active' => 1,
                 'github_url' => NULL,
                 'github_is_active' => 0,
@@ -36,7 +38,7 @@ class NewbieSeeder extends Seeder
                 'view_code' => 'newbie-2',
                 'position' => 2,
                 'image' => 'L3j7CqBNtkceYuCVh3qymsjDCORoPE-metaZGVza3RvcC1wcmV2aWV3LmpwZw==-.jpg',
-                'hosted_url' => 'http://127.0.0.1:8000/newbie/product-preview-card-component',
+                'hosted_url' => $MY_DOMAIN.'/newbie/product-preview-card-component',
                 'hosted_is_active' => 1,
                 'github_url' => NULL,
                 'github_is_active' => 0,
@@ -51,7 +53,7 @@ class NewbieSeeder extends Seeder
                 'view_code' => 'newbie-3',
                 'position' => 3,
                 'image' => 'k2Rw9ab3wmp3DMpNvEm9OMXho56RTI-metaZGVza3RvcC1wcmV2aWV3LmpwZw==-.jpg',
-                'hosted_url' => 'http://127.0.0.1:8000/newbie/interactive-rating-component',
+                'hosted_url' => $MY_DOMAIN.'/newbie/interactive-rating-component',
                 'hosted_is_active' => 0,
                 'github_url' => NULL,
                 'github_is_active' => 0,
@@ -66,7 +68,7 @@ class NewbieSeeder extends Seeder
                 'view_code' => 'newbie-4',
                 'position' => 4,
                 'image' => 'ZMbnNabjjjhCMcKq0w0r0WWBfdFZn1-metaZGVza3RvcC1wcmV2aWV3LmpwZw==-.jpg',
-                'hosted_url' => 'http://127.0.0.1:8000/newbie/qr-code-component',
+                'hosted_url' => $MY_DOMAIN.'/newbie/qr-code-component',
                 'hosted_is_active' => 0,
                 'github_url' => NULL,
                 'github_is_active' => 0,

@@ -48,11 +48,11 @@ class Newbie extends Model
                 $newbie->position = $lastPosition + 1;
             }
 
-            $YOUR_DOMAIN = env('APP_URL');
+            $MY_DOMAIN = env('APP_URL');
 
             // Vérifiez si hosted_url n'est pas déjà défini
             if (empty($newbie->hosted_url)) {
-                $newbie->hosted_url = $YOUR_DOMAIN . '/newbie/' . $newbie->slug;
+                $newbie->hosted_url = $MY_DOMAIN . '/newbie/' . $newbie->slug;
             }
         });
     }
