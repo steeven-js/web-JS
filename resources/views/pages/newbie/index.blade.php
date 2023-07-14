@@ -10,13 +10,18 @@
         </div>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
             @forelse ($newbies as $newbie)
-            {{-- @dd($newbie->slug) --}}
-                <div>
+                {{-- @dd($newbie->slug) --}}
+                @if (!empty($newbie->hosted_url))
                     <a href="{{ route('newbie.show', ['slug' => $newbie->slug]) }}">
-                        <img class="h-auto max-w-full rounded-lg"
-                            src="{{Storage::url($newbie->image)}}" alt="{{$newbie->title}}">
+                        <img class="h-auto max-w-full rounded-lg" src="{{ Storage::url($newbie->image) }}"
+                            alt="{{ $newbie->title }}">
                     </a>
-                </div>
+                @else
+                    <a href="#">
+                        <img class="h-auto max-w-full rounded-lg" src="{{ Storage::url($newbie->image) }}"
+                            alt="{{ $newbie->title }}">
+                    </a>
+                @endif
             @empty
                 <h1>Aucun challenge Newbie</h1>
             @endforelse
