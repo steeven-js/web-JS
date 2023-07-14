@@ -17,7 +17,7 @@
                             alt="{{ $newbie->title }}">
                     </a>
                 @else
-                    <a href="#" target="_blank">
+                    <a href="#">
                         <img class="h-auto max-w-full rounded-lg" src="{{ Storage::url($newbie->image) }}"
                             alt="{{ $newbie->title }}">
                     </a>
