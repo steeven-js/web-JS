@@ -14,16 +14,19 @@
         href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
         rel="stylesheet">
     <!-- My CSS -->
-    <link rel="stylesheet" href="{{asset('newbie/newbie-2/css/style.css')}}">
-</head>
+    <link rel="stylesheet" href="{{ asset('newbie/newbie-2/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/arrow-links.css') }}">
 
 <body>
+
+    <x-arrow-links :previous-newbie="$previousNewbie" :next-newbie="$nextNewbie" />
 
     <main>
         <article class="product">
             <picture class="product__img">
-                <source srcset="{{asset('newbie/newbie-2/assets/images/image-product-desktop.jpg')}}" media="(min-width: 600px)">
-                <img src="{{asset('newbie/newbie-2/assets/images/image-product-mobile.jpg')}}"
+                <source srcset="{{ asset('newbie/newbie-2/assets/images/image-product-desktop.jpg') }}"
+                    media="(min-width: 600px)">
+                <img src="{{ asset('newbie/newbie-2/assets/images/image-product-mobile.jpg') }}"
                     alt="Gabrielle Essense perfume bottle laying flat on a table with green leaves above and below it">
             </picture>
 

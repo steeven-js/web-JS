@@ -51,12 +51,12 @@ class NewbieResource extends Resource
                     ->url() // Champ de type url
                     ->maxLength(255),
                 Forms\Components\Toggle::make('hosted_is_active')
-                    ->label('Active'),
+                    ->label('hosted_url'),
                 Forms\Components\TextInput::make('github_url')
                     ->url()
                     ->maxLength(255),
                 Forms\Components\Toggle::make('github_is_active')
-                    ->label('Active'),
+                    ->label('github_url'),
             ]);
     }
 

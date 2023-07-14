@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FEM Results Summary</title>
-    <link rel="stylesheet" href="{{asset('newbie/newbie-1/css/newbie-1.css')}}">
+    <link rel="stylesheet" href="{{ asset('newbie/newbie-1/css/newbie-1.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/arrow-links.css') }}">
 </head>
 
 <body>
+
+    <x-arrow-links :previous-newbie="$previousNewbie" :next-newbie="$nextNewbie" />
 
     <main>
 
