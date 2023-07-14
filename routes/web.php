@@ -18,7 +18,7 @@ use App\Http\Controllers\ProfileController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/newbie', [NewbieController::class, 'index'])->name('newbie.index');
+Route::get('/newbie/all', [NewbieController::class, 'index'])->name('newbie.index');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

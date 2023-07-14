@@ -12,6 +12,8 @@ class NewbieController extends Controller
         //Récupérer tous les newbie de la base de données is_visible = 1
         $newbies = Newbie::where('is_visible', 1)->get();
 
+        // dd($newbies);
+
         return view('pages.newbie.index', compact('newbies'));
     }
 
